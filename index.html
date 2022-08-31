@@ -6,11 +6,21 @@
     <title>Site da Thais</title>
     <meta name="descrição do meu site" content="meu primeiro site em html">
     <meta charset="utf-8">
+    <style>
+        body {
+            background-color: darkgrey;
+        }
+
+        h1 {
+            color: darkmagenta;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- tags de titulo -->
-    <h1>Esse é meu primeiro site.</h1>
+    <h1 id="titulo">Esse é meu primeiro site.</h1>
     <h2>Esse é meu primeiro site.</h2>
     <h3>Esse é meu primeiro site.</h3>
     <h4>Esse é meu primeiro site.</h4>
@@ -18,24 +28,23 @@
     <h6>Esse é meu primeiro site.</h6>
 
     <!-- tag de parágrafo -->
-    <p>
-        Menina, me dá sua mão, pense bem antes de agir <br/>
-        Se não for agora, te espero lá fora, então deixe-me ir <br/>
-        Um dia te encontro nessas suas voltas <br/>
+    <p class="paragrafo">
+        Menina, me dá sua mão, pense bem antes de agir <br />
+        Se não for agora, te espero lá fora, então deixe-me ir <br />
+        Um dia te encontro nessas suas voltas <br />
         <!-- tag de quebra de linha -->
-        <br/>
-        Minha mente é mó confusão <br/>
-        Solta a minha mão, que eu sei que 'cê volta <br/>
-        O tempo mostra nossa direção <br/>
+        <br />
+        Minha mente é mó confusão <br />
+        Solta a minha mão, que eu sei que 'cê volta <br />
+        O tempo mostra nossa direção <br />
     </p>
-
     <!-- tag de formatação de texto -->
-    <b>Minha frase em negrito.</b><br/>
-    <i>Minha frase em itálico.</i><br/>
-    <strong>Minha frase forte.</strong><br/>
-    <small>Minha frase pequena.</small><br/>
-    <u>Minha frase sublinhada.</u><br/>
-    <s>Minha frase riscada.</s><br/>
+    <b>Minha frase em negrito.</b><br />
+    <i>Minha frase em itálico.</i><br />
+    <strong>Minha frase forte.</strong><br />
+    <small>Minha frase pequena.</small><br />
+    <u>Minha frase sublinhada.</u><br />
+    <s>Minha frase riscada.</s><br />
     Minha frase normal.
 
     <!-- tag de listas -->
@@ -47,42 +56,42 @@
         <li>Jantar</li>
     </ol>
 
-    <h2>Lista ordenada do número que eu quiser:</h2>
+    <h2 class="primeirasListas">Lista ordenada do número que eu quiser:</h2>
     <ol start="5">
         <li>Estudar</li>
         <li>Fazer um portifólio</li>
         <li>Arrumar um emprego!</li>
     </ol>
 
-    <h2>Lista em ordem alfabética</h2>
+    <h2 class="primeirasListas">Lista em ordem alfabética</h2>
     <ol type="a">
         <li>Estudar</li>
         <li>Fazer um portifólio</li>
         <li>Arrumar um emprego!</li>
     </ol>
 
-    <h2>Lista em algarismo romano</h2>
+    <h2 class="segundasListas">Lista em algarismo romano</h2>
     <ol type="I">
         <li>Estudar</li>
         <li>Fazer um portifólio</li>
         <li>Arrumar um emprego!</li>
     </ol>
 
-    <h2>Lista desordenada</h2>
+    <h2 class="segundasListas">Lista desordenada</h2>
     <ul>
         <li>Estudar</li>
         <li>Fazer um portifólio</li>
         <li>Arrumar um emprego!</li>
     </ul>
 
-    <h2>Lista desordenada quadradinhos</h2>
+    <h2 class="segundasListas">Lista desordenada quadradinhos</h2>
     <ul type="square">
         <li>Estudar</li>
         <li>Fazer um portifólio</li>
         <li>Arrumar um emprego!</li>
     </ul>
 
-    <h2>Lista desordenada circulo vazado</h2>
+    <h2 class="segundasListas">Lista desordenada circulo vazado</h2>
     <ul type="circle">
         <li>Estudar</li>
         <li>Fazer um portifólio</li>
@@ -93,11 +102,11 @@
     <!-- tabelas semanticas -->
     <table border="1">
         <thead>
-                <tr>
-                    <th>titulo1</th>
-                    <th>titulo2</th>
-                    <th>titulo3</th>
-                </tr>
+            <tr>
+                <th>titulo1</th>
+                <th>titulo2</th>
+                <th>titulo3</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -122,9 +131,9 @@
 
     <h1>Inserindo imagens</h1>
     <h2>Gato um</h2>
-    <img src="imagem1.jpg" width="320" height="205"/>
+    <img src="imagem1.jpg" width="320" height="205" />
     <h2>Gato dois</h2>
-    <img src="imagem2.jpg" width="320" height="205"/>
+    <img src="imagem2.jpg" width="320" height="205" />
     <br><br>
 
     <h1>Links</h1>
@@ -132,20 +141,20 @@
 
     <h1>Formulários</h1>
     <form>
-        <label>Nome:</label><br/>
-        <input type="text"/>
-        <br/></br>
-        
-        <label>Email:</label><br/>
-        <input type="email"/>
-        <br/><br/>
+        <label>Nome:</label><br />
+        <input type="text" />
+        <br /></br>
 
-        <label>Senha:</label><br/>
-        <input type="password"/>
-        <br/><br/>
-        <label>Mensagem:</label><br/>
+        <label>Email:</label><br />
+        <input type="email" />
+        <br /><br />
+
+        <label>Senha:</label><br />
+        <input type="password" />
+        <br /><br />
+        <label>Mensagem:</label><br />
         <textarea></textarea>
-        <br/><br/>
+        <br /><br />
         <button type="submit">Enviar</button>
 
     </form>
